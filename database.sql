@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS bank_db;
+USE bank_db;
+
+CREATE TABLE IF NOT EXISTS accounts (
+    account_number INT PRIMARY KEY AUTO_INCREMENT,
+    holder_name VARCHAR(100) NOT NULL,
+    balance DECIMAL(12,2) NOT NULL DEFAULT 0.00,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CHECK (balance >= 0)
+);
