@@ -9,6 +9,7 @@ Features:
 4. Withdraw money
 5. Check balance
 6. Transfer money (JDBC commit/rollback)
+7. Update Account
 
 Setup:
 1. Install JDK 8+ and MySQL.
